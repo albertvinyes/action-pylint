@@ -15,7 +15,7 @@ wget -O - -q https://raw.githubusercontent.com/reviewdog/reviewdog/master/instal
 
 if [[ "$(which pylint)" == "" ]]; then
   echo "[action-pylint] Installing pylint package..."
-  python -m pip install --upgrade pylint --break-system-packages
+  python -m pip install --upgrade pylint
 fi
 echo "[action-pylint] pylint version:"
 pylint --version
